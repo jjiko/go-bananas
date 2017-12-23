@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["bananas.js"],"sourcesContent":["// Hi :)\r\nlet tid = setInterval( function () {\r\n    if ( document.readyState !== 'complete' ) return;\r\n    clearInterval( tid );\r\n    window.app = require('./0.1.0/app.js').init();\r\n}, 100 );"],"file":"app-bananas.js"}

@@ -1,0 +1,90 @@
+.mobile {
+  .go-bananas h1 {
+    line-height: 1.5;
+  }
+
+  .helper-text-mobile {
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 5vh;
+    font-family: arial, helvitica, sans-serif;
+    font-weight: bold;
+    bottom: -5vh;
+  }
+  .banana-go {
+    top: -26vh;
+    left: 0;
+    font-size: 26vh;
+  }
+  .banana-bananas {
+    text-shadow: 0 -1vw #111;
+    font-size: 15vw;
+    top: 0;
+    left: 0;
+  }
+  .banana-trigger {
+    transform: translate(-50%, -50%);
+  }
+  .banana-trigger .btn-banana {
+    width: 256px;
+    height: 256px;
+  }
+  .star-wrap {
+    zoom: .25;
+  }
+
+  .game-container {
+    left: 0;
+  }
+
+  .game {
+    left: 0;
+  }
+
+  .game-over-score-container {
+    padding: 0 1vw;
+  }
+
+  .game-over span {
+    font-size: 10vh;
+  }
+
+  .game-close, .game-reset {
+    font-size: 4vh;
+    margin: 2vh 1vw;
+    padding: 2vh 5vw;
+  }
+
+  .game-over-message {
+    font-size: 5vh;
+    box-sizing: border-box;
+  }
+
+  .game-over-score .score-text {
+    font-size: 4vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .game-description {
+    font-size: 5vh;
+    width: 100%;
+    left: 0;
+  }
+
+  .go-bananas .game-title h1 {
+    font-size: 15vh;
+    width: auto;
+    overflow: visible;
+    display: block;
+    left: 0;
+    top: 30%;
+  }
+
+  .game-title {
+    overflow: visible;
+    width: auto;
+  }
+}

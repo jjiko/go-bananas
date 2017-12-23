@@ -1,0 +1,292 @@
+.blinker {
+  animation: blinker 1s linear infinite;
+}
+
+.move {
+  transform: translateY(120vh);
+}
+
+.linear-wipe-red {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #fff), color-stop(40%, #ff0), color-stop(60%, #ff0), color-stop(80%, #fff));
+  background: linear-gradient(to right, #fff 20%, #ff0000 40%, #ff0000 60%, #fff 80%);
+  background-size: 200% auto;
+  color: #000;
+  -webkit-animation: shine 1s linear infinite;
+  animation: shine 1s linear infinite;
+}
+
+.linear-wipe-reverse {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #fff), color-stop(40%, #ff0), color-stop(60%, #ff0), color-stop(80%, #fff));
+  background: linear-gradient(to right, #fff 20%, #ff0 40%, #ff0 60%, #fff 80%);
+  background-size: 200% auto;
+  color: #000;
+  -webkit-animation: shineReverse 1s linear infinite;
+  animation: shineReverse 1s linear infinite;
+}
+
+.linear-wipe {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #fff), color-stop(40%, #ff0), color-stop(60%, #ff0), color-stop(80%, #fff));
+  background: linear-gradient(to right, #fff 20%, #ff0 40%, #ff0 60%, #fff 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 1s linear infinite;
+  animation: shine 1s linear infinite;
+}
+
+.rotater {
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+  /*transform-origin: center center;*/
+}
+
+.rotater-reverse {
+  -webkit-animation: spinReverse 4s linear infinite;
+  -moz-animation: spinReverse 4s linear infinite;
+  animation: spinReverse 4s linear infinite;
+}
+
+.swinging {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes gobananas {
+  0% {
+    transform: scale(0.55) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.0) rotate(15deg);
+  }
+}
+
+@keyframes gobananas {
+  0% {
+    transform: scale(0.55) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.0) rotate(15deg);
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@-webkit-keyframes shineReverse {
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes shineReverse {
+  to {
+    background-position: -200% center;
+  }
+}
+
+@-moz-keyframes spinReverse {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes spinReverse {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spinReverse {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg)
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg)
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes colorchange {
+  0% {
+
+    color: blue;
+  }
+
+  25% {
+
+    color: red;
+  }
+
+  50% {
+    color: yellow;
+  }
+
+  75% {
+
+    color: green;
+  }
+
+  100% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+
+    color: blue;
+  }
+
+  25% {
+
+    color: red;
+  }
+
+  50% {
+    color: yellow;
+  }
+
+  75% {
+
+    color: green;
+  }
+
+  100% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes colorchange2 {
+  0% {
+
+    color: red;
+  }
+
+  25% {
+
+    color: green;
+  }
+
+  50% {
+
+    color: yellow;
+  }
+
+  75% {
+
+    color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    color: blue;
+  }
+}
+
+@-webkit-keyframes colorchange2 {
+  0% {
+
+    color: red;
+  }
+
+  25% {
+
+    color: green;
+  }
+
+  50% {
+
+    color: yellow;
+  }
+
+  75% {
+
+    color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    color: blue;
+  }
+}
+
+@keyframes radial {
+  0% {
+    background: radial-gradient(circle at center, rgba( 255, 125 , 125, 0 ) 0%, #feff04 0%, #feff04 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.3 ) 24%, #feff04 25%, #feff04 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.5 ) 49%, #feff04 50%, #feff04 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.8 ) 74%, #feff04 75%, #feff04 100%);
+  }
+  100% {
+    color: #fff;
+    background: radial-gradient(circle at center, #f88 99%, #feff04 100%, #feff04 100%);
+  }
+}
