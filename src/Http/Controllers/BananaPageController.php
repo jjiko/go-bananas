@@ -8,9 +8,6 @@ class BananaPageController extends Controller
   public function index()
   {
     \Debugbar::disable();
-    return view('banana::index', [
-      'bgBody' => package_path('resources/assets/img/bg-banana-tile2r.png'),
-      'bgBadBanana' => package_path('resources/assets/img/bad-banana.png')
-    ]);
+    return view('banana::index');
   }
 }

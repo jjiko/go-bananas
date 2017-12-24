@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="/dist/css/bananas.css"/>
     <style>
         body {
-            background-image: url('data:{{ mime_content_type($bgBody) }};base64,{{ base64_encode(file_get_contents($bgBody)) }}');
+            background-image: url('//cdn.joejiko.com/img/go-bananas/bg-banana-tile2r.png');
         }
 
         .bg-bad-banana {
-            background-image: url('data:{{ mime_content_type($bgBadBanana) }};base64,{{ base64_encode(file_get_contents($bgBadBanana)) }}');
+            background-image: url('https://storage.googleapis.com/cdn.joejiko.com/img/go-bananas/bad-banana.png');
         }
     </style>
 </head>
